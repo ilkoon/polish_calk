@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер выражений</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертер выражений</h1>
+        <div class="input-section">
+            <label for="expression">Введите выражение:</label>
+            <input type="text" id="expression" placeholder="Например: (a+b)*c">
+            <p class="note">Допустимые символы: латинские буквы (a-z), +, -, *, /, ^, (, )</p>
+            <div class="buttons">
+                <button id="toPostfix">В постфиксную (ОПЗ)</button>
+                <button id="toPrefix">В префиксную (ПНЗ)</button>
+            </div>
+        </div>
+        <div class="results">
+            <div class="result-box">
+                <h3>Результат:</h3>
+                <div id="result"></div>
+            </div>
+            <div class="result-box">
+                <h3>Ранг:</h3>
+                <div id="rang"></div>
+            </div>
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
